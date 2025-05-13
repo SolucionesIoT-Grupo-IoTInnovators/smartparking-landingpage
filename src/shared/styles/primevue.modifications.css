@@ -1,0 +1,78 @@
+.p-floatlabel{ transition: margin 0.3s; }
+
+.p-password,
+.p-inputtext,
+.p-select,
+.p-multiselect,
+.p-textarea {
+    width: 16rem;
+    min-width: 16rem;
+    max-width: 16rem;
+}
+
+.p-floatlabel:has(input:focus),
+.p-floatlabel:has(.p-filled),
+.p-floatlabel:has(.p-inputwrapper-filled),
+.p-floatlabel:has(.p-inputwrapper-focus),
+.p-floatlabel:has(.no-movement)
+{ margin-top: 1.5rem; }
+
+.p-button { min-height: 2rem; }
+
+.p-galleria-thumbnails-viewport{
+    height: var(--thumbnail-area-height)!important;
+}
+
+
+.product__amount .p-inputtext {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.p-fieldset,.p-fieldset-legend {
+    background: var(--bg)!important;
+    border-color: var(--bg-border)!important;
+}
+
+
+.p-floatlabel:has(.p-filled):not(:has(input:focus)) .big-input,
+.p-floatlabel:has(.p-inputwrapper-filled) .big-input{
+    text-align: center;
+}
+
+
+
+
+
+
+/* Definir la animación personalizada */
+@keyframes p-progressspinner-color {
+    0% {
+        border-color: var(--text)!important;
+    }
+    100% {
+        border-color: var(--text) !important;
+    }
+}
+
+.p-drawer-header{
+    padding: 0!important;
+    margin:0!important;
+}
+
+.p-toast {
+    width: min(calc(100vw - 40px), 25rem);
+    max-width: min(calc(100vw - 40px), 25rem);
+    min-width: min(calc(100vw - 40px), 25rem);
+}
+
+.p-card-body,
+.p-card-content{
+    height: 100%;
+}
+.p-card-body{ padding: 1rem!important; }
